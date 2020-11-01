@@ -1,0 +1,3 @@
+const inputs = () => {};
+
+export { inputs };

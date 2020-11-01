@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./../node_modules/remixicon/fonts/remixicon.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main class="menu center column open">
+      <h3 class="mb-1">Menu</h3>
+      <ul>
+        <li class="center mb-1">
+          <i id="pencil" class="ri-quill-pen-line mr-1 disabled"></i>
+          <i id="eraser" class="ri-eraser-line mr-1"></i>
+          <i id="square" class="ri-shape-line mr-1"></i>
+          <i id="clear" class="ri-brush-line mr-1 disabled"></i>
+          <i id="back" class="ri-arrow-go-back-line mr-1 disabled"></i>
+          <i id="forward" class="ri-arrow-go-forward-line disabled"></i>
+        </li>
+        <li class="center color mb-1">
+          <input
+            id="color-text"
+            type="text"
+            maxlength="7"
+            class="background-color"
+            value="#333333"
+          />
+          <input id="color-input" value="#333333" type="color" />
+        </li>
+        <li class="weight center">
+          <i id="weight-minus" class="ri-subtract-line mr-1"></i>
+          <input id="weight" class="mr-1" readonly type="text" value="1" />
+          <i id="weight-add" class="ri-add-line"></i>
+        </li>
+      </ul>
+      <i id="close" class="ri-close-fill close"></i>
+    </main>
+    <canvas></canvas>
+    <script src="./../node_modules/jquery/dist/jquery.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
